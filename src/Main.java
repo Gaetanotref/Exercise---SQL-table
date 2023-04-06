@@ -8,7 +8,7 @@ public class Main {
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "developer", "developer");
             Statement statement = connection.createStatement();
-            statement.execute("INSERT INTO test1 (name,surname)values('Franco','Rossi')");
+            statement.execute("INSERT INTO test1 (name,surname)values('Mario','Legno')");
             ResultSet resultSet = statement.executeQuery("select * from test1");
 
             while (resultSet.next()) {
